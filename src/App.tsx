@@ -22,7 +22,11 @@ function App() {
   };
   return (
     <>
+      <h1 className="flex flex-col w-full items-center justify-center text-5xl font-bold my-8 text-transparent bg-clip-text bg-gradient-to-r from-[#00ffc6] to-[#007cf0]">
+          Rucksack
+        </h1>
       <div className="flex flex-col w-full items-center justify-center">
+        
         <div
           id="mnemonic-box"
           className="flex flex-col w-full items-center justify-center relative"
