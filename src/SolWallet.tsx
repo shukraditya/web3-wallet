@@ -42,10 +42,10 @@ export const SolWallet = ({ mnemonic }: SolWalletProps) => {
             key={index}
             className="flex items-center justify-between text-white space-x-2"
           >
-            <div className="break-all">{pubKey.toBase58()}</div>
+            <div className="break-all font-mono">{pubKey.toBase58()}</div>
             <button
               onClick={() => handleCopy(pubKey.toBase58(), index)}
-              className="hover:text-green-400 m-0 rounded flex items-center justify-center h-0.5"
+              className="hover:text-green-400 p-1 m-0 rounded flex items-center justify-center h-0.5"
             >
               <Copy size={12} />
             </button>

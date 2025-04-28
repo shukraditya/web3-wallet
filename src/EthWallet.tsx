@@ -43,12 +43,12 @@ export const EthWallet = ({ mnemonic }: EthWalletProps) => {
             key={index}
             className="flex items-center justify-between text-white space-x-2"
           >
-            <div className="break-all">{address}</div>
+            <div className="break-all font-mono">{address}</div>
             <button
               onClick={() => handleCopy(address, index)}
-              className="hover:text-green-400 p-1 m-0 rounded flex items-center justify-center"
+              className="hover:text-green-400 p-1 m-0 rounded flex items-center justify-center h-0.5"
             >
-              <Copy size={10} />
+              <Copy size={12} />
             </button>
             {copiedIndex === index && (
               <span className="text-xs text-green-400 ml-2">Copied!</span>
